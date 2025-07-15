@@ -19,7 +19,7 @@ function findUniqueElements(array) {
     let resultArray =[];
     for(let i = 0; i < array.length; i++) {
        let isUnique = true;
-       for (let j = 0; j<array.length; j++) {
+       for (let j = 0; j<resultArray.length; j++) {
            if(array[i] === resultArray[j]) {
                isUnique = false;
                break;
