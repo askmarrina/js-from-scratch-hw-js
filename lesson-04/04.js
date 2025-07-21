@@ -22,4 +22,4 @@ function doubleEachCharacter(str) {
 
 }
 
-console.log(doubleEachCharacter('hello'));
+console.log(doubleEachCharacter('marina'));
