@@ -2,12 +2,12 @@
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
 function isEven(a) {
-    if(a % 2 === 1) {
-        console.log('число нечетное')
+    if(a % 2 === 0) {
+        return true;
     } else {
-        console.log('число четное')
+       return false;
     }
-    return a;
+
 }
 
-console.log(isEven(10))
+console.log(isEven(11))
