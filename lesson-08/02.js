@@ -5,10 +5,17 @@
 
 function isNumeric(str) {
   // your code
+  if (isNaN(str)) {
+      return false;
+  } else if(Number(str)) {
+      return true;
+  } else if(str = " ") {
+      return false;
+  }
 }
 
-// console.log(isNumeric("123")) // Ожидаемый результат: true
-// console.log(isNumeric("12.3")) // Ожидаемый результат: true
-// console.log(isNumeric("123abc")) // Ожидаемый результат: false
-// console.log(isNumeric("abc")) // Ожидаемый результат: false
-// console.log(isNumeric(" ")) // Ожидаемый результат: false
+console.log(isNumeric("123")) // Ожидаемый результат: true
+ console.log(isNumeric("12.3")) // Ожидаемый результат: true
+ console.log(isNumeric("123abc")) // Ожидаемый результат: false
+ console.log(isNumeric("abc")) // Ожидаемый результат: false
+ console.log(isNumeric(" ")) // Ожидаемый результат: false
