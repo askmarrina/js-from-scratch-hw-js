@@ -6,19 +6,33 @@
   Другой вариант - использовать метод split строк, и метод массива join.
 */
 
+// function capitalizeWords(string) {
+//     const words = string.split(' ');
+//     let result = words.map(word => {
+//         return word[0].toUpperCase() + word.slice(1).toLowerCase();
+//     })
+//
+//
+//     return result.join(' ');
+// }
+// console.log(capitalizeWords('heLlo wOrld frOm javasCript'))
+
+let string = 'hello world from javascript';
 function capitalizeWords(string) {
-    const words = string.split(' ');
-    let result = words.map(word => {
-        return word[0].toUpperCase() + word.slice(1).toLowerCase();
-    })
-    // console.log(capitalizeWords);
+    let words = string.split(' ');
+    // console.log(words);
+    let result = [];
+    for(let i = 0; i< words.length; i++) {
+        let word = words[i];
+        let capitalizeWord = word[0].toUpperCase()+word.slice(1).toLowerCase();
+        result.push(capitalizeWord);
 
+    }
     return result.join(' ');
+
 }
-console.log(capitalizeWords('heLlo wOrld frOm javasCript'))
 
-
-
+console.log(capitalizeWords(string))
 
 // console.log(capitalizeWords('hello world from javascript'))
 //
