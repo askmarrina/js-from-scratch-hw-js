@@ -8,12 +8,12 @@
 
 function capitalizeWords(string) {
     const words = string.split(' ');
-    capitalizeWords = words.map(word => {
+    let result = words.map(word => {
         return word[0].toUpperCase() + word.slice(1).toLowerCase();
     })
     // console.log(capitalizeWords);
-    let result = capitalizeWords.join(' ');
-    return result;
+
+    return result.join(' ');
 }
 console.log(capitalizeWords('heLlo wOrld frOm javasCript'))
 
