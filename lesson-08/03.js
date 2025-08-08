@@ -12,11 +12,11 @@
 function truncate(str, maxLength) {
   // your code
 
-    if(str.length < maxLength) {
+    if((str.length < maxLength) || (str.length === maxLength)) {
         return str;
     } else if(str.length > maxLength) {
         return str.slice(0, maxLength) + "..."
     }
 }
 
-console.log(truncate('вот, что мне действительно нравится в этом', 20))
+console.log(truncate('fghfhfhfhfhfyrshfbsb', 20))
